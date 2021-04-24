@@ -1,3 +1,7 @@
 export default function Menu() {
-    return <h1>Menu</h1>
+  return (
+    <button>
+      <span className="material-icons">menu</span>
+    </button>
+  );
 }

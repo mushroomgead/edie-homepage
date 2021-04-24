@@ -9,18 +9,18 @@ export default function ServicesSection() {
         <span className="text-2xl">demand services</span>
       </div>
       <Card
-        icon={<Icon color="bg-blue-500" />}
+        icon={<Icon color="bg-blue-500" name="edit" />}
         header="UI/UX Design"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis."
       />
       <Card
         bordered
-        icon={<Icon color="bg-green-500" />}
+        icon={<Icon color="bg-green-500" name="code" />}
         header="Front End"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis."
       />
       <Card
-        icon={<Icon color="bg-red-500" />}
+        icon={<Icon color="bg-red-500" name="storage" />}
         header="Back End"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis."
       />

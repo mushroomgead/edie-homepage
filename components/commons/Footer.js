@@ -12,10 +12,17 @@ export default function Header() {
         <span>Contact</span>
       </div>
       <Logo />
-      <div className="pb-16">
-        <span>ig</span>
-        <span>linkedin</span>
-        <span>tw</span>
+      <div className="flex flex-row pb-16">
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="/instagram.svg" className="mr-2" />
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+          <img src="/linkedin.svg" className="mr-2" />
+        </a>
+
+        <a href="https://twitter.com/" target="_blank">
+          <img src="/twitter.svg" className="mr-2" />
+        </a>
       </div>
       <ContactButton />
       <span className="pt-36">created by kate - devChallenges.io</span>
