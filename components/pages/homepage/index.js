@@ -1,11 +1,12 @@
 import { Fragment } from "react";
+import dynamic from 'next/dynamic'
 import Header from "../../commons/Header";
 import IntroSection from "./IntroSection";
-import ServicesSection from "./ServicesSection";
-import PortfolioSection from "./PortfolioSection";
-import TeamSection from "./TeamSection";
-import TestimonialSection from "./TestimonialSection";
-import Footer from "../../commons/Footer";
+const ServicesSection = dynamic(() => import('./ServicesSection'),  { ssr: false })
+const PortfolioSection = dynamic(() => import('./PortfolioSection'),  { ssr: false })
+const TeamSection = dynamic(() => import('./TeamSection'),  { ssr: false })
+const TestimonialSection = dynamic(() => import('./TestimonialSection'),  { ssr: false })
+const Footer = dynamic(() => import('../../commons/Footer'),  { ssr: false })
 
 export default function Homepage() {
   return (
